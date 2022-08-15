@@ -1,10 +1,10 @@
 import "./VideoItem.css"
 
 
-const VideoItem = ({video})=>{
+const VideoItem = ({video,onSelected})=>{
     return(
-        <div className="video-item item">
-            <img classNAme="ui  image" src={video.snippet.thumbnails.medium.url} alt={video.snippet.title}/>
+        <div onClick={()=>onSelected(video)} className="video-item item">
+            <img className="ui  image" src={video.snippet.thumbnails.medium.url} alt={video.snippet.title}/>
             <div className="content">
             <div className="header">{video.snippet.title} </div>
             </div>

@@ -34,6 +34,7 @@ const SearchBar =({onTermSubmit}) =>{
  <div className="ui segment container" style={{margin:"20px 0"}}>
 <form onSubmit={onFormSubmit} className="ui form">
   <div className="field">
+    
     <input
       value={term}
       type="text"
